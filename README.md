@@ -1,5 +1,5 @@
 # Blind SQL Injection
-This tool is intended to test web sites requiring NTLM authentication, parsing the response obtained and helping to craft custom payloads. For futher information about NTLM refer to https://davenport.sourceforge.net/ntlm.html.
+This tool purpose is to automate testing of web servers for blind SQL injection. This tool is intendent to be sqlmap-like but simpler and oriented exclusively to blind injections.
 
 ## Install
 Clone git repository and execute the python file.
@@ -10,6 +10,8 @@ python3 blindsqli.py
 ```
 
 ## Usage
+
+```
 python3 blindsqli.py [-h] -r REQUEST -p PARAMETERS [PARAMETERS ...] [-xT CSRFTOKEN] [-xU CSRFURL] [-xM CSRFMETHOD] [-s SCHEMA] [-cT CONDTRUE] [-cF CONDFALSE]
                     [-v | --verbose | --no-verbose] [-D DB] [-T TABLE] [-C [COLUMNS ...]] [--dbs | --no-dbs] [--tables | --no-tables]
                     [--row-count | --no-row-count] [--columns | --no-columns] [--rows | --no-rows]
@@ -49,4 +51,4 @@ optional arguments:
   --columns, --no-columns
                         enumerate columns definition on selected table (default: False)
   --rows, --no-rows     dump rows on selected table (default: False)
-
+```
